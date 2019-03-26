@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class TabUsers extends Migration
+class Sede extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,9 @@ class TabUsers extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('sede', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->string('password');
         });
     }
 
